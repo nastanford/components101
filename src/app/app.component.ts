@@ -6,10 +6,16 @@ import { Component } from '@angular/core';
   template: `
 
   <h1>Hey Guys</h1>
-  <p>How are you doing?</p>
+  <p>{{myObject.location}}</p>
   `,
 styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+ // title = 'app works!';
+  myObject = {
+    gender: 'male',
+    age: 33,
+    location: 'USA'
+  }
+
 }
